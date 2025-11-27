@@ -1,10 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
-
 module.exports = function (app) {
-
-  mongoose.connect(process.env.DB);
 
   const bookSchema = new mongoose.Schema({
     title: { type: String, required: true },
